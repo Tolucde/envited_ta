@@ -1,0 +1,123 @@
+/* All Global styles goes here */
+
+
+/* Fonts */
+
+
+/* Inter */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* External Fonts */
+
+* {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background: gray;
+    width: 5px;
+}
+
+@media screen and (min-width: 768px) {
+     ::-webkit-scrollbar {
+        width: 8px;
+    }
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    -webkit-box-shadow: inset 0 0 6px gray;
+    box-shadow: inset 0 0 6px gray;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: gray;
+}
+
+.my-masonry-grid {
+    display: -webkit-box;
+    /* Not needed if autoprefixing */
+    display: -ms-flexbox;
+    /* Not needed if autoprefixing */
+    display: flex;
+    /* gutter size offset */
+    width: auto;
+}
+
+.my-masonry-grid_column {
+    /* padding-left: 1rem; */
+    /* gutter size */
+    background-clip: padding-box;
+}
+
+
+/* Style your items */
+
+.my-masonry-grid_column>div {
+    /* change div to reference your elements you put in <Masonry> */
+    margin-bottom: 1rem;
+}
+
+.validationText {
+    color: rgba(255, 0, 0, 0.692);
+    font-size: 14px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+}
+
+.swiper-wrapper {
+    background: #fafafa;
+}
+
+.swiper-slide {
+    text-align: center;
+    height: 344px !important;
+    width: 280px !important;
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+    background: #fafafa;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide-active {
+    height: 344px !important;
+    width: 280px !important;
+}
